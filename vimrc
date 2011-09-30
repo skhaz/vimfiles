@@ -17,13 +17,11 @@ set ff=unix
 set encoding=utf8
 
 set tabstop=4
-set cursorcolumn
 set cursorline
 
 set textwidth=80
-set colorcolumn=+1
 
-colorscheme diablo3
+colorscheme jellybeans
 
 " NERD Tree
 nmap <silent> <special> <S-F2> :NERDTreeToggle<RETURN>
@@ -37,4 +35,6 @@ if has("gui_running")
 	set gfn=Monaco:h16
 	set guioptions-=T
 endif
+
+let g:clang_user_options='|| exit 0'
 
