@@ -40,3 +40,7 @@ let g:clang_user_options='|| exit 0'
 " json
 nmap <leader>jt <Esc>:%!python -m json.tool<CR><Esc>:set filetype=json<CR>
 
+" gist
+let g:gist_detect_filetype = 1
+
+
