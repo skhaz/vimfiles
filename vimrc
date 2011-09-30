@@ -12,7 +12,7 @@ set wrap linebreak nolist
 syntax on "turn on syntax highlighting
 set wildmode=list:longest   "make cmdline tab completion similar to bash
 set wildignore=*.o,*.obj,*~ "stuff to ignore when tab completing
-
+filetype plugin on
 set ff=unix
 set encoding=utf8
 
