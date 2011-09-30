@@ -25,7 +25,6 @@ colorscheme jellybeans
 
 " NERD Tree
 nmap <silent> <special> <S-F2> :NERDTreeToggle<RETURN>
-
 let NERDTreeIgnore=['.vim$', '\~$', '.*\.pyc$', 'pip-log\.txt$']
 
 " for scons
@@ -33,8 +32,11 @@ au BufNewFile,BufRead SCons* set filetype=scons
 
 if has("gui_running")
 	set gfn=Monaco:h16
-	set guioptions-=T
+	set guioptions-=T " remove the toolbar
 endif
 
 let g:clang_user_options='|| exit 0'
+
+" json
+nmap <leader>jt <Esc>:%!python -m json.tool<CR><Esc>:set filetype=json<CR>
 
