@@ -24,9 +24,6 @@ colorscheme ir_black
 nmap <silent> <special> <S-F2> :NERDTreeToggle<RETURN>
 let NERDTreeIgnore=['.vim$', '\~$', '.*\.pyc$', 'pip-log\.txt$']
 
-" scons
-au BufNewFile,BufRead SCons* set filetype=scons
-
 if has("gui_running")
 	set gfn=Monaco:h16
 	set guioptions-=T " remove the toolbar
