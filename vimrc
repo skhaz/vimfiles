@@ -6,6 +6,7 @@ set showcmd   " show incomplete cmds down the bottom
 set showmode  " show current mode down the bottom
 set incsearch " find the next match as we type the search
 set hlsearch  " hilight searches by default
+set magic " set magic on, for regular expressions
 set showbreak=...
 set wrap linebreak nolist
 syntax on " turn on syntax highlighting
@@ -19,13 +20,28 @@ set tabstop=4
 set cursorline
 set textwidth=80
 colorscheme ir_black
+set nobackup
+set history=700
+
+" Always hide the statusline
+set laststatus=2
+
+" No sound, no blink on errros
+set noerrorbells
+set novisualbell
 
 " NERDTree
 nmap <silent> <special> <S-F2> :NERDTreeToggle<RETURN>
 let NERDTreeIgnore=['.vim$', '\~$', '.*\.pyc$', 'pip-log\.txt$']
 
 if has("gui_running")
-	set gfn=Monaco:h16
+	if has("win32")
+		set gfn=Inconsolata:h14
+	else
+		set gfn=Monaco:h14
+	endif
+
+	set lines=999 columns=999 " hack to show maximized
 	set guioptions-=T " remove the toolbar
 endif
 
