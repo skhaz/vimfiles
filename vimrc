@@ -45,6 +45,10 @@ if has("gui_running")
 	set guioptions-=T " remove the toolbar
 endif
 
+" tab navigation
+map <C-Tab> :tabnext<CR>
+map <S-Tab> :tabprevious<CR>
+
 " clang
 let g:clang_user_options='|| exit 0'
 
@@ -60,4 +64,6 @@ autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
 autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
+
+set statusline=[%04l,%04v]\ [A=\%03.3b\ H=\%02.2B]\ [%{&ff}-%Y]\ [LIN=%L]\ %<%F%h%r%h%w%m
 
