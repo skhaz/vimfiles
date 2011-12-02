@@ -12,17 +12,14 @@ set smartcase
 set ruler
 set showbreak=...
 set wrap linebreak nolist
-syntax on " turn on syntax highlighting
 set wildmode=list:longest   " make cmdline tab completion similar to bash
 set wildignore=*.o,*.obj,*~ " stuff to ignore when tab completing
-filetype plugin on
 set ff=unix
 set encoding=utf-8
 set fileencoding=utf-8
 set tabstop=4
 set cursorline
 " set textwidth=80
-colorscheme ir_black
 set nobackup
 set history=700
 
@@ -32,6 +29,10 @@ set laststatus=2
 " No sound, no blink on errros
 set noerrorbells
 set novisualbell
+
+filetype plugin on
+syntax on " turn on syntax highlighting
+colorscheme ir_black
 
 " NERDTree
 nmap <silent> <special> <S-F2> :NERDTreeToggle<RETURN>
