@@ -7,6 +7,9 @@ set showmode  " show current mode down the bottom
 set incsearch " find the next match as we type the search
 set hlsearch  " hilight searches by default
 set magic " set magic on, for regular expressions
+set ignorecase
+set smartcase
+set ruler
 set showbreak=...
 set wrap linebreak nolist
 syntax on " turn on syntax highlighting
@@ -18,7 +21,7 @@ set encoding=utf-8
 set fileencoding=utf-8
 set tabstop=4
 set cursorline
-set textwidth=80
+" set textwidth=80
 colorscheme ir_black
 set nobackup
 set history=700
@@ -66,4 +69,14 @@ autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
 
 set statusline=[%04l,%04v]\ [A=\%03.3b\ H=\%02.2B]\ [%{&ff}-%Y]\ [LIN=%L]\ %<%F%h%r%h%w%m
+
+" MacVIM shift+arrow-keys behavior (required in .vimrc)
+let macvim_hig_shift_movement = 1
+
+" show (partial) command in the status line
+set showcmd
+
+if filereadable(expand("~/.vimrc.local"))
+	source ~/.vimrc.local
+endif
 
