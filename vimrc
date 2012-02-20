@@ -17,10 +17,11 @@ set wildignore=*.o,*.obj,*~ " stuff to ignore when tab completing
 set ff=unix
 set encoding=utf-8
 set fileencoding=utf-8
+
 set tabstop=4
 set cursorline
 " set textwidth=80
-set nobackup
+"set nobackup
 set history=700
 
 " Always hide the statusline
