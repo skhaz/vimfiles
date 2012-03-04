@@ -21,7 +21,7 @@ set fileencoding=utf-8
 set tabstop=4
 set cursorline
 " set textwidth=80
-"set nobackup
+set backup
 set history=700
 
 " Always hide the statusline
@@ -36,6 +36,7 @@ syntax on " turn on syntax highlighting
 colorscheme ir_black
 
 " NERDTree
+autocmd VimEnter * NERDTree
 nmap <silent> <special> <S-F2> :NERDTreeToggle<RETURN>
 let NERDTreeIgnore=['.vim$', '\~$', '.*\.pyc$', 'pip-log\.txt$']
 
