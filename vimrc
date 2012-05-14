@@ -36,7 +36,11 @@ syntax on " turn on syntax highlighting
 colorscheme ir_black
 
 " NERDTree
-autocmd VimEnter * NERDTree
+" Open up a NERDtree at startup if there are no files provided
+autocmd vimenter * if !argc() | NERDTree | endif
+" Close Vim if the only window left open is a NERDTree
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+
 nmap <silent> <special> <S-F2> :NERDTreeToggle<RETURN>
 let NERDTreeIgnore=['.vim$', '\~$', '.*\.pyc$', 'pip-log\.txt$']
 
