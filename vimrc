@@ -80,6 +80,9 @@ set statusline=[%04l,%04v]\ [A=\%03.3b\ H=\%02.2B]\ [%{&ff}-%Y]\ [LIN=%L]\ %<%F%
 " MacVIM shift+arrow-keys behavior (required in .vimrc)
 let macvim_hig_shift_movement = 1
 
+" automatically removing all trailing whitespace
+autocmd BufWritePre * :%s/\s\+$//e
+
 " show (partial) command in the status line
 set showcmd
 
