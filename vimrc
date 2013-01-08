@@ -16,7 +16,7 @@ if filereadable(file)
 endif  
 
 try
-  colorscheme wombat 
+  colorscheme solarized
 catch
 endtry
 
