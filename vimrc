@@ -16,9 +16,17 @@ if filereadable(file)
 endif  
 
 try
-  colorscheme solarized
+  colorscheme sonofobsidian 
 catch
 endtry
 
 filetype plugin indent on
+
+set showcmd   " show incomplete cmds down the bottom
+set showmode  " show current mode down the bottom
+set incsearch " find the next match as we type the search
+set hlsearch  " hilight searches by default
+set magic " set magic on, for regular expressions
+set ignorecase
+set smartcase
 
