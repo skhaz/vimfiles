@@ -56,6 +56,14 @@ autocmd vimenter * if !argc() | NERDTree | endif
 " Close Vim if the only window left open is a NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
+if has('gui_running')
+  " gVim settings
+  set guioptions-=T     " Remove the toolbar
+  set lines=40          " 40 lines of text instead of 24,
+else
+  set term=builtin_ansi " Make arrow and other keys work
+endif
+
 " Use local vimrc if available
 if filereadable(expand("~/.vimrc.local"))
   source ~/.vimrc.local
