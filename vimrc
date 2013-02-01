@@ -1,16 +1,15 @@
-
-set nocompatible " be iMproved
+set nocompatible " Be iMproved
 
 set number
 set wrap
 set backspace=indent,eol,start
 set tabstop=4
-set showcmd   " show incomplete cmds down the bottom
-set showmode  " show current mode down the bottom
-set incsearch " find the next match as we type the search
-set hlsearch  " hilight searches by default
-set magic " set magic on, for regular expressions
-set wildmode=list:longest   " make cmdline tab completion similar to bash
+set showcmd   " Show incomplete cmds down the bottom
+set showmode  " Show current mode down the bottom
+set incsearch " Find the next match as we type the search
+set hlsearch  " Hilight searches by default
+set magic " Set magic on, for regular expressions
+set wildmode=list:longest " Make cmdline tab completion similar to bash
 set ignorecase
 set smartcase
 set ruler
@@ -48,7 +47,7 @@ autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
 
-" automatically removing all trailing whitespace
+" Automatically removing all trailing whitespace
 autocmd BufWritePre * :%s/\s\+$//e
 
 " NERDTree
@@ -57,6 +56,7 @@ autocmd vimenter * if !argc() | NERDTree | endif
 " Close Vim if the only window left open is a NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
+" Use local vimrc if available
 if filereadable(expand("~/.vimrc.local"))
   source ~/.vimrc.local
 endif
