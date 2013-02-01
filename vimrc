@@ -10,13 +10,13 @@ filetype off
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
-let file = expand("~/.vim/bundles.vim")                   
-if filereadable(file)                                                                
-  silent! execute 'source '.file                                                   
-endif  
+let file = expand("~/.vim/bundles.vim")
+if filereadable(file)
+  silent! execute 'source '.file
+endif
 
 try
-  colorscheme sonofobsidian 
+  colorscheme sonofobsidian
 catch
 endtry
 
