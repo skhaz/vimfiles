@@ -39,6 +39,16 @@ endtry
 
 filetype plugin indent on
 
+" Window navigation
+map <C-j> <C-W>j
+map <C-k> <C-W>k
+map <C-h> <C-W>h
+map <C-l> <C-W>l
+
+" Tab navigation
+map <C-Tab> :tabnext<CR>
+map <S-Tab> :tabprevious<CR>
+
 " Highlight whitespace
 highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
@@ -56,13 +66,19 @@ autocmd vimenter * if !argc() | NERDTree | endif
 " Close Vim if the only window left open is a NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
+" GitGutter
+
 if has('gui_running')
   " gVim settings
   set guioptions-=T     " Remove the toolbar
   set lines=40          " 40 lines of text instead of 24,
-else
-  set term=builtin_ansi " Make arrow and other keys work
 endif
+
+" Status line
+set statusline=[%04l,%04v]\ [A=\%03.3b\ H=\%02.2B]\ [%{&ff}-%Y]\ [LIN=%L]\ %<%F%h%r%h%w%m
+
+" Auto reload vimrc
+autocmd! bufwritepost .vimrc source %
 
 " Use local vimrc if available
 if filereadable(expand("~/.vimrc.local"))
