@@ -33,7 +33,7 @@ if filereadable(file)
 endif
 
 try
-  colorscheme sonofobsidian
+  colorscheme base16-monokai
 catch
 endtry
 
@@ -78,7 +78,7 @@ endif
 set statusline=[%04l,%04v]\ [A=\%03.3b\ H=\%02.2B]\ [%{&ff}-%Y]\ [LIN=%L]\ %<%F%h%r%h%w%m
 
 " Auto reload vimrc
-autocmd! bufwritepost .vimrc source %
+autocmd BufWritePost .vimrc source %
 
 " Use local vimrc if available
 if filereadable(expand("~/.vimrc.local"))
