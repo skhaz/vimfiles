@@ -78,8 +78,9 @@ if has('gui_running')
   set lines=40          " 40 lines of text instead of 24,
 endif
 
-" Status line
-"set statusline=[%04l,%04v]\ [A=\%03.3b\ H=\%02.2B]\ [%{&ff}-%Y]\ [LIN=%L]\ %<%F%h%r%h%w%m
+" Powerline
+set laststatus=2 " Always display the statusline in all windows
+set noshowmode " Hide the default mode text (e.g. -- INSERT -- below the statusline)
 
 " Auto reload vimrc
 autocmd BufWritePost .vimrc source %
