@@ -72,8 +72,6 @@ autocmd vimenter * if !argc() | NERDTree | endif
 " Close Vim if the only window left open is a NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
-" GitGutter
-
 if has('gui_running')
   " gVim settings
   set guioptions-=T     " Remove the toolbar
