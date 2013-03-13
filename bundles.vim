@@ -19,3 +19,6 @@ Bundle 'fugitive.vim'
 " pyflakes: highlights common Python errors like misspelling a variable name on the fly. It also warns about unused imports, redefined functions, etc.
 Bundle 'pyflakes'
 
+" Qt syntax highlighting
+Bundle 'Qt.vim'
+
