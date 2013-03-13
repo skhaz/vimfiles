@@ -15,10 +15,14 @@ set smartcase
 set ruler
 set history=1000
 set backup
+set cursorline
 
 set ff=unix
 set encoding=utf-8
 set fileencoding=utf-8
+
+" Enable syntax highlighting
+syntax on
 
 " No sound, no blink on errros
 set noerrorbells
@@ -33,8 +37,9 @@ if filereadable(file)
 endif
 
 try
+  set t_Co=256 " Enable 256 colors
   set background=dark
-  colorscheme base16-monokai
+  colorscheme xoria256
 catch
 endtry
 
