@@ -1,9 +1,10 @@
 " let Vundle manage Vundle
-" required! 
+" required!
 Bundle 'gmarik/vundle'
 
 Bundle "The-NERD-tree"
 Bundle 'Syntastic' " uber awesome syntax and errors highlighter
 Bundle 'a.vim'
-Bundle 'Son-of-Obisidian'
+Bundle 'chriskempson/base16-vim'
+
 

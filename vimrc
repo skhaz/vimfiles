@@ -33,6 +33,7 @@ if filereadable(file)
 endif
 
 try
+  set background=dark
   colorscheme base16-monokai
 catch
 endtry
