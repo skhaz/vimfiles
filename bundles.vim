@@ -7,7 +7,15 @@ Bundle 'Syntastic' " uber awesome syntax and errors highlighter
 Bundle 'a.vim'
 Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Bundle 'benmills/vimux'
+
+" CtrlP: Full path fuzzy file, buffer, mru, tag, ... finder for Vim.
 Bundle 'ctrlp.vim'
+
 Bundle 'xoria256.vim'
+
+" fugitive: a Git wrapper so awesome, it should be illegal.
 Bundle 'fugitive.vim'
+
+" pyflakes: highlights common Python errors like misspelling a variable name on the fly. It also warns about unused imports, redefined functions, etc.
+Bundle 'pyflakes'
 

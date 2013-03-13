@@ -1,3 +1,7 @@
+
+" Rodrigo Delduca
+" -- http://nullonerror.org
+
 set nocompatible " Be iMproved
 
 set number
@@ -89,5 +93,4 @@ autocmd BufWritePost .vimrc source %
 if filereadable(expand("~/.vimrc.local"))
   source ~/.vimrc.local
 endif
-
 
