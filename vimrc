@@ -76,7 +76,7 @@ if has('gui_running')
 endif
 
 " Status line
-set statusline=[%04l,%04v]\ [A=\%03.3b\ H=\%02.2B]\ [%{&ff}-%Y]\ [LIN=%L]\ %<%F%h%r%h%w%m
+"set statusline=[%04l,%04v]\ [A=\%03.3b\ H=\%02.2B]\ [%{&ff}-%Y]\ [LIN=%L]\ %<%F%h%r%h%w%m
 
 " Auto reload vimrc
 autocmd BufWritePost .vimrc source %
@@ -85,4 +85,5 @@ autocmd BufWritePost .vimrc source %
 if filereadable(expand("~/.vimrc.local"))
   source ~/.vimrc.local
 endif
+
 
