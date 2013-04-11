@@ -3,9 +3,15 @@
 Bundle 'gmarik/vundle'
 
 Bundle "The-NERD-tree"
+
+Bundle 'Valloric/YouCompleteMe'
+
 Bundle 'Syntastic' " uber awesome syntax and errors highlighter
+
 Bundle 'a.vim'
-Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+
+"Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+
 Bundle 'benmills/vimux'
 
 " CtrlP: Full path fuzzy file, buffer, mru, tag, ... finder for Vim.
@@ -21,4 +27,7 @@ Bundle 'pyflakes'
 
 " Qt syntax highlighting
 Bundle 'Qt.vim'
+
+" Vimplate http://www.vim.org/scripts/script.php?script_id=1311
+Bundle 'vimplate'
 

@@ -20,10 +20,10 @@ set ruler
 set history=1000
 set backup
 set cursorline
-
 set ff=unix
 set encoding=utf-8
 set fileencoding=utf-8
+set autoread
 
 " Enable syntax highlighting
 syntax on
@@ -85,6 +85,9 @@ endif
 " Powerline
 set laststatus=2 " Always display the statusline in all windows
 set noshowmode " Hide the default mode text (e.g. -- INSERT -- below the statusline)
+
+" Vimplate
+let Vimplate = "~/.vim/templates"
 
 " Auto reload vimrc
 autocmd BufWritePost .vimrc source %
