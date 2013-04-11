@@ -31,3 +31,9 @@ Bundle 'Qt.vim'
 " Vimplate http://www.vim.org/scripts/script.php?script_id=1311
 Bundle 'vimplate'
 
+" The Matrix screensaver
+Bundle 'matrix.vim'
+
+" CSS color highlighting
+Bundle 'ap/vim-css-color'
+
