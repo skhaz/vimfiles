@@ -82,8 +82,10 @@ if has('gui_running')
 endif
 
 " Powerline
+let g:Powerline_symbols = 'unicode'
 set laststatus=2 " Always display the statusline in all windows
 set noshowmode " Hide the default mode text (e.g. -- INSERT -- below the statusline)
+set fillchars+=stl:\ ,stlnc:\
 
 " YCM Setup
 " Stolen from Oblita https://gist.github.com/oblitum/5565974
