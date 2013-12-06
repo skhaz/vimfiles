@@ -99,6 +99,10 @@ let g:tagbar_autoclose = 1
 let g:tagbar_autofocus = 1
 noremap <C-Right> :TagbarToggle<CR>
 
+" Rainbow Parentheses
+let g:rainbow_operators = 1
+let g:rainbow_active = 1
+
 " Vimplate
 let Vimplate = "~/.vim/templates"
 

@@ -43,9 +43,9 @@ Bundle 'morhetz/gruvbox'
 " Tagbar displays the tags of the current file in a sidebar
 Bundle 'Tagbar'
 
-" The Matrix screensaver
-Bundle 'matrix.vim'
-
 " CSS color highlighting
 Bundle 'ap/vim-css-color'
+
+" Rainbow Parentheses
+Bundle 'Rainbow-Parentheses-Improved-and2'
 
