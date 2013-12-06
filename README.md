@@ -1,4 +1,3 @@
-
 Setup
 =====
 ```
@@ -18,6 +17,10 @@ Open vim and type
 Wait for installation...
 
 For costumize the plugin list, edit the file bundles.vim
+
+
+ScreenShot
+==========
 
 ![ScreenShot](https://raw.github.com/skhaz/vimfiles/master/screenshot.png)
 
