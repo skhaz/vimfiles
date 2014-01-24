@@ -8,16 +8,16 @@ cd .vim
 git submodule update --init --recursive
 ```
 
-Open vim and type
+Customize and install all vundles
+=================================
+
+For costumize the plugin list, edit the file "bundles.vim", then run the command
 
 ```
-<ESC>:BundleInstall
+vim +BundleInstall +qall
 ```
 
-Wait for installation...
-
-For costumize the plugin list, edit the file bundles.vim
-
+Wait for installation... Done :)
 
 ScreenShot
 ==========
