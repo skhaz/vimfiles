@@ -6,11 +6,12 @@ Bundle "The-NERD-tree"
 
 Bundle 'Valloric/YouCompleteMe'
 
-Bundle 'Syntastic' " uber awesome syntax and errors highlighter
+" uber awesome syntax and errors highlighter
+Bundle 'Syntastic'
 
 Bundle 'a.vim'
 
-Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+" Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 
 Bundle 'benmills/vimux'
 
@@ -20,7 +21,7 @@ Bundle 'ctrlp.vim'
 Bundle 'xoria256.vim'
 
 " fugitive: a Git wrapper so awesome, it should be illegal.
-Bundle 'fugitive.vim'
+Bundle 'tpope/vim-fugitive'
 
 " pyflakes: highlights common Python errors like misspelling a variable name on the fly. It also warns about unused imports, redefined functions, etc.
 Bundle 'pyflakes'
@@ -48,4 +49,7 @@ Bundle 'ap/vim-css-color'
 
 " Rainbow Parentheses
 Bundle 'Rainbow-Parentheses-Improved-and2'
+
+" Lean & mean status/tabline for vim that's light as air
+Bundle 'bling/vim-airline'
 

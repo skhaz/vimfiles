@@ -81,18 +81,16 @@ if has('gui_running')
   set lines=40          " 40 lines of text instead of 24,
 endif
 
-" Powerline
-let g:Powerline_symbols = 'unicode'
-set laststatus=2 " Always display the statusline in all windows
-set noshowmode " Hide the default mode text (e.g. -- INSERT -- below the statusline)
-set fillchars+=stl:\ ,stlnc:\
-
 " YCM Setup
 " Stolen from Oblita https://gist.github.com/oblitum/5565974
 let g:ycm_confirm_extra_conf = 0
 let g:ycm_global_ycm_extra_conf = '~/.ycm_extra_conf.py'
 let g:ycm_autoclose_preview_window_after_insertion = 1
 let g:ycm_key_list_previous_completion=['<Up>']
+
+" Syntastic
+let g:syntastic_error_symbol = '✘'
+let g:syntastic_warning_symbol = '☢'
 
 " Tagbar
 let g:tagbar_autoclose = 1
@@ -102,6 +100,12 @@ noremap <C-Right> :TagbarToggle<CR>
 " Rainbow Parentheses
 let g:rainbow_operators = 1
 let g:rainbow_active = 1
+
+" Airlines
+let g:airline_powerline_fonts = 1
+let g:airline_theme = 'bubblegum'
+let g:airline#extensions#tabline#enabled = 1
+set laststatus=2 " Always display the statusline in all windows
 
 " Vimplate
 let Vimplate = "~/.vim/templates"
