@@ -17,7 +17,7 @@ Edit the file "bundles.vim" and run the command
 vim +BundleInstall +qall
 ```
 
-And wait for installation... Happy Hacking!
+... Happy Hacking!
 
 ScreenShot
 ==========
