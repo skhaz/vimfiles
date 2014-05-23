@@ -42,7 +42,7 @@ endif
 
 try
   set t_Co=256 " Enable 256 colors
-  set background=dark
+  " set background=dark
   colorscheme xoria256
 catch
 endtry
@@ -103,7 +103,7 @@ let g:rainbow_active = 1
 
 " Airlines
 let g:airline_powerline_fonts = 1
-let g:airline_theme = 'bubblegum'
+let g:airline_theme = 'badwolf'
 let g:airline#extensions#tabline#enabled = 1
 set laststatus=2 " Always display the statusline in all windows
 
