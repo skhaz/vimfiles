@@ -8,16 +8,16 @@ cd .vim
 git submodule update --init --recursive
 ```
 
-Customize and install all vundles
-=================================
+Customize and install
+=====================
 
-For costumize the plugin list, edit the file "bundles.vim", then run the command
+Edit the file "bundles.vim" and run the command
 
 ```
 vim +BundleInstall +qall
 ```
 
-Wait for installation... Done :)
+... Happy Hacking!
 
 ScreenShot
 ==========
