@@ -53,3 +53,5 @@ Bundle 'Rainbow-Parentheses-Improved-and2'
 " Lean & mean status/tabline for vim that's light as air
 Bundle 'bling/vim-airline'
 
+" Additional vim C++ syntax highlighting
+Bundle 'octol/vim-cpp-enhanced-highlight'
