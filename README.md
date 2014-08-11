@@ -1,5 +1,6 @@
 Setup
 =====
+
 ```
 cd ~
 git clone https://github.com/skhaz/vimfiles .vim
@@ -17,11 +18,4 @@ Edit the file "bundles.vim" and run the command
 vim +BundleInstall +qall
 ```
 
-... Happy Hacking!
-
-ScreenShot
-==========
-
 ![ScreenShot](https://raw.github.com/skhaz/vimfiles/master/screenshot.png)
-
-
