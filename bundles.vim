@@ -7,18 +7,19 @@ Bundle "The-NERD-tree"
 Bundle 'Valloric/YouCompleteMe'
 
 " uber awesome syntax and errors highlighter
-Bundle 'Syntastic'
+Bundle 'syntastic'
 
 Bundle 'a.vim'
 
-" Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
-
-Bundle 'benmills/vimux'
+" Visualize and traverse your undo tree
+Bundle 'Gundo'
 
 " CtrlP: Full path fuzzy file, buffer, mru, tag, ... finder for Vim.
 Bundle 'ctrlp.vim'
 
+" Color schemes
 Bundle 'xoria256.vim'
+Bundle 'nanotech/jellybeans.vim'
 
 " fugitive: a Git wrapper so awesome, it should be illegal.
 Bundle 'tpope/vim-fugitive'
@@ -55,3 +56,11 @@ Bundle 'bling/vim-airline'
 
 " Additional vim C++ syntax highlighting
 Bundle 'octol/vim-cpp-enhanced-highlight'
+
+" Define a different filetype syntax on regions of a buffer (used in vimdeck)
+Bundle 'SyntaxRange'
+
+" This Vim plugin will search for terms using the excellent Dash.app , making
+" API lookups simple.
+Bundle 'rizzatti/dash.vim'
+

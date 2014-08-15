@@ -19,7 +19,7 @@ set smartcase
 set ruler
 set history=1000
 set backup
-set cursorline
+set nocursorline
 set ff=unix
 set encoding=utf-8
 set fileencoding=utf-8
@@ -42,8 +42,9 @@ endif
 
 try
   set t_Co=256 " Enable 256 colors
-  " set background=dark
-  colorscheme xoria256
+  set background=dark
+  " colorscheme xoria256
+  colorscheme jellybeans
 catch
 endtry
 
@@ -103,7 +104,7 @@ let g:rainbow_active = 1
 
 " Airlines
 let g:airline_powerline_fonts = 1
-let g:airline_theme = 'badwolf'
+let g:airline_theme = 'jellybeans'
 let g:airline#extensions#tabline#enabled = 1
 set laststatus=2 " Always display the statusline in all windows
 
