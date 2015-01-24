@@ -40,10 +40,12 @@ if filereadable(file)
 endif
 
 try
+  set term=screen-256color
   set t_Co=256 " Enable 256 colors
   set background=dark
   " colorscheme xoria256
   colorscheme jellybeans
+  " set ft=xdefaults
 catch
 endtry
 
@@ -117,4 +119,6 @@ autocmd BufWritePost .vimrc source %
 if filereadable(expand("~/.vimrc.local"))
   source ~/.vimrc.local
 endif
+
+set ft=xdefaults
 
