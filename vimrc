@@ -57,6 +57,16 @@ map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
 
+" Disable arrow keys
+noremap  <Up> ""
+noremap! <Up> <Esc>
+noremap  <Down> ""
+noremap! <Down> <Esc>
+noremap  <Left> ""
+noremap! <Left> <Esc>
+noremap  <Right> ""
+noremap! <Right> <Esc>
+
 " Tab navigation
 map <C-Tab> :tabnext<CR>
 map <S-Tab> :tabprevious<CR>
@@ -119,6 +129,4 @@ autocmd BufWritePost .vimrc source %
 if filereadable(expand("~/.vimrc.local"))
   source ~/.vimrc.local
 endif
-
-set ft=xdefaults
 
