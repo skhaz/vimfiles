@@ -57,16 +57,6 @@ map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
 
-" Disable arrow keys
-noremap  <Up> ""
-noremap! <Up> <Esc>
-noremap  <Down> ""
-noremap! <Down> <Esc>
-noremap  <Left> ""
-noremap! <Left> <Esc>
-noremap  <Right> ""
-noremap! <Right> <Esc>
-
 " Tab navigation
 map <C-Tab> :tabnext<CR>
 map <S-Tab> :tabprevious<CR>
@@ -79,48 +69,16 @@ autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
 
-" Automatically removing all trailing whitespace
-autocmd BufWritePre * :%s/\s\+$//e
-
 " NERDTree
 " Close Vim if the only window left open is a NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 noremap <C-Left> :NERDTreeToggle<CR>
-
-if has('gui_running')
-  " gVim settings
-  set guioptions-=T     " Remove the toolbar
-  set lines=40          " 40 lines of text instead of 24,
-endif
-
-" YCM Setup
-" Stolen from Oblita https://gist.github.com/oblitum/5565974
-let g:ycm_confirm_extra_conf = 0
-let g:ycm_global_ycm_extra_conf = '~/.ycm_extra_conf.py'
-let g:ycm_autoclose_preview_window_after_insertion = 1
-let g:ycm_key_list_previous_completion=['<Up>']
-
-" Syntastic
-let g:syntastic_error_symbol = '✘'
-let g:syntastic_warning_symbol = '☢'
-
-" Tagbar
-let g:tagbar_autoclose = 1
-let g:tagbar_autofocus = 1
-noremap <C-Right> :TagbarToggle<CR>
-
-" Rainbow Parentheses
-let g:rainbow_operators = 1
-let g:rainbow_active = 1
 
 " Airlines
 let g:airline_powerline_fonts = 1
 let g:airline_theme = 'jellybeans'
 let g:airline#extensions#tabline#enabled = 1
 set laststatus=2 " Always display the statusline in all windows
-
-" Vimplate
-let Vimplate = "~/.vim/templates"
 
 " Auto reload vimrc
 autocmd BufWritePost .vimrc source %
